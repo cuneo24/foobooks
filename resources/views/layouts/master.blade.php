@@ -1,9 +1,12 @@
 <!doctype html>
 <html lang='en'>
 <head>
-    <title>{{ $title }}</title>
+    <title>@yield('title')</title>
     <meta charset='utf-8'>
-    <link href='/css/foobooks.css' type='text/css' rel='stylesheet'>
+
+    <link href='/css/foobooks.css' rel='stylesheet'>
+
+    @yield('head')
 </head>
 <body>
 
@@ -12,11 +15,7 @@
 </header>
 
 <section>
-    <h1>{{ $title }}</h1>
-
-    <p>
-        Details about this book will go here...
-    </p>
+    @yield('content')
 </section>
 
 <footer>

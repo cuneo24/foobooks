@@ -13,6 +13,14 @@ return [
     |
     */
 
+    'nav' =>[
+        'books' => 'Books',
+        'books/create' => 'Add a book',
+        'practice' => 'Practice',
+        'about' => 'About',
+        'contact' => 'Contact'
+    ],
+
     'name' => env('APP_NAME', 'Laravel'),
 
     /*
